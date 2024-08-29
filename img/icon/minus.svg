@@ -1,0 +1,10 @@
+<svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 1L1 0.999999" stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M15 1L1 0.999999" stroke="url(#paint0_diamond_2044_349)" stroke-width="1.5" stroke-linecap="round"/>
+<defs>
+<radialGradient id="paint0_diamond_2044_349" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(35.7812 0.467858) rotate(177.987) scale(43.6282 1.38071)">
+<stop stop-color="#FFCA8C"/>
+<stop offset="1" stop-color="#FF7337"/>
+</radialGradient>
+</defs>
+</svg>
