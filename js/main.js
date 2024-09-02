@@ -23,16 +23,19 @@
 // button 
 (() => {
   let button = document.querySelectorAll('.js_button');
+  let free = document.querySelector('#free')
 
   function buttonLeave() {
     if (window.innerWidth < 371) {
       for (let i = 0; i < button.length; i++) {
         button[i].innerHTML = 'В ТОП!'
       }
+      free.innerHTML = '1 месяц FREE'
     } else {
       for (let i = 0; i < button.length; i++) {
         button[i].innerHTML = 'Вывести в ТОП!'
       }
+      free.innerHTML = '1 месяц бесплатно'
     }
   }
   buttonLeave();
