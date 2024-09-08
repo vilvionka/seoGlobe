@@ -32,7 +32,7 @@ body {
 
 header {
   position: relative;
-  z-index: 3;
+  z-index: 5;
 }
 
 .header_flex {
@@ -57,7 +57,7 @@ header {
 }
 
 .header_flex_nav a:hover {
-  color: #FF7337;
+  color: #3757FF;
 }
 
 .header_flex_nav_wrap_box {
@@ -67,7 +67,6 @@ header {
   width: 390px;
   top: 30px;
   left: 0;
-  border: 1px solid;
   border-radius: 15px;
   border: 1px solid #f2f2f2;
   padding: 30px 30px 15px 30px;
@@ -77,6 +76,7 @@ header {
 
 .header_flex_nav_wrap_box.active {
   display: flex;
+  z-index: 10;
 }
 
 .header_flex_nav_wrap_box a {
@@ -94,6 +94,7 @@ header {
 
 .header_flex_nav_wrap {
   position: relative;
+  z-index: 4;
 }
 
 .header_flex_nav_wrap_elem {
@@ -155,15 +156,19 @@ header {
   height: 54px;
   border: 1px solid #F2F2F2;
   border-radius: 500px;
-  border: none;
   cursor: pointer;
   margin-left: 30px;
   transition: .3s;
+  background: transparent;
 }
 
-.header_flex_end button:hover {}
+.header_flex_end button:hover {
+  border: 1px solid #3757FF;
+}
 
-.header_flex_end button:hover span {}
+.header_flex_end button:hover p {
+  color: #3757FF;
+}
 
 .header_flex_end button:hover i {}
 
@@ -173,6 +178,7 @@ header {
   font-size: 16px;
   transition: .3s;
   text-transform: uppercase;
+  transition: .3s;
 }
 
 .header_flex_end button p span {
@@ -208,7 +214,7 @@ header {
   left: 0;
   width: 100%;
   background-color: #fff;
-  z-index: 5;
+  z-index: 15;
 }
 
 .menu .header_flex {
@@ -271,7 +277,7 @@ header {
   color: #3757FF;
   position: absolute;
   right: 30px;
-  top: 38px;
+  top: 33px;
 }
 
 .menu_box_elem::after {
@@ -433,6 +439,7 @@ main h1 {
   padding: 0 30px;
   position: relative;
   z-index: 3;
+  cursor: pointer;
 }
 
 .main_button_text {
@@ -621,6 +628,12 @@ section {
   background: #3757FF;
   border: none;
   border-radius: 500px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.tariffs_flex_text_button button:hover {
+  background: #27292F;
 }
 
 .tariffs_flex_text_button button p {
@@ -645,8 +658,19 @@ section {
 .tariffs_flex_text_button button b i {
   width: 16px;
   height: 16px;
-  background-image: url(../img/icon/arrow_button_blue2.svg);
-  background-repeat: no-repeat;
+  transition: .3s;
+}
+
+.tariffs_flex_text_button button b i svg {
+  transition: .3s;
+}
+
+.tariffs_flex_text_button button:hover b svg {
+  transform: rotate(-45deg);
+}
+
+.tariffs_flex_text_button button:hover b svg path {
+  stroke: #27292F;
 }
 
 .keys .container {
@@ -676,6 +700,14 @@ section {
   height: 54px;
   border: 1px solid #F2F2F2;
   border-radius: 500px;
+  cursor: pointer;
+  transition: .3s;
+}
+.keys_headling a:hover{
+  border: 1px solid #3757FF;
+}
+.keys_headling a:hover p{
+  color: #3757FF;
 }
 
 .keys_headling.mobile {
@@ -685,6 +717,7 @@ section {
 .keys_headling a p {
   font-size: 16px;
   margin-right: 15px;
+  transition: .3s;
 }
 
 .keys_headling a i {
@@ -1072,6 +1105,12 @@ section.rose {
   background: #fff;
   border: none;
   margin-top: 80px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.rose_flex_right button:hover {
+  background: #27292F;
 }
 
 .rose_flex_right button span {
@@ -1080,6 +1119,11 @@ section.rose {
   color: #3757FF;
   margin-right: 15px;
   text-transform: uppercase;
+  transition: .3s;
+}
+
+.rose_flex_right button:hover span {
+  color: #fff;
 }
 
 .rose_flex_right button b {
@@ -1091,12 +1135,28 @@ section.rose {
   justify-content: center;
   align-items: center;
   margin-right: -20px;
+  transition: .3s;
+}
+
+.rose_flex_right button:hover b {
+  background: #fff;
 }
 
 .rose_flex_right button b i {
   width: 16px;
   height: 16px;
-  background-image: url(../img/icon/arrow_button.svg);
+}
+
+.rose_flex_right button b i svg {
+  transition: .3s;
+}
+
+.rose_flex_right button:hover b i svg {
+  transform: rotate(-45deg);
+}
+
+.rose_flex_right button:hover b i svg path {
+  stroke: #27292F;
 }
 
 .rose_headling {
@@ -1168,6 +1228,13 @@ section.rose {
   margin-top: 30px;
   background: transparent;
   cursor: pointer;
+  transition: .3s;
+}
+.question_box_left button:hover{
+  border: 1px solid #3757FF;
+}
+.question_box_left button:hover p{
+  color: #3757FF;
 }
 
 .question_box_left button p {
@@ -1175,6 +1242,7 @@ section.rose {
   font-weight: 500;
   text-transform: uppercase;
   margin-right: 15px;
+  transition: .3s;
 }
 
 .question_box_left button b {
@@ -1216,6 +1284,12 @@ section.rose {
   border-radius: 50%;
   transition: .3s;
   cursor: pointer;
+  border: 1px solid #3757FF;
+}
+
+.accordion_item_head:hover::after {
+  background: #fff;
+  border: 1px solid #3757FF;
 }
 
 .accordion_item_head::before {
@@ -1228,14 +1302,21 @@ section.rose {
   display: block;
   z-index: 2;
   font-size: 20px;
+  transition: .3s;
+}
+
+.accordion_item_head:hover::before {
+  color: #3757FF;
 }
 
 .open .accordion_item_head {
   background-color: transparent;
+
 }
 
 .open .accordion_item_head::after {
   background: #27292F;
+  border: 1px solid #27292F;
 }
 
 .open .accordion_item_head::before {
@@ -1353,11 +1434,21 @@ section.rose {
   align-items: center;
   background: transparent;
   cursor: pointer;
+  transition: .3s;
+}
+
+.promotion button:hover {
+  border: 1px solid #3757FF;
+}
+
+.promotion button:hover p {
+  color: #3757FF;
 }
 
 .promotion button p {
   font-size: 16px;
   margin-right: 10px;
+  transition: .3s;
 }
 
 .promotion button i {
@@ -1499,7 +1590,17 @@ form .last_box_form_flex:nth-child(1) .last_box_form_flex_input span::after {
   font-size: 18px;
   left: 30px;
   transition: .3s;
+  pointer-events: none;
+}
 
+.last_box_form_flex_input input:focus~span {
+  transform: translateY(-13px);
+  font-size: 12px;
+}
+
+.last_box_form_flex_input span.remove {
+  transform: translateY(-13px);
+  font-size: 12px;
 }
 
 .last_box_form textarea {
@@ -1549,6 +1650,7 @@ form .last_box_form_flex:nth-child(1) .last_box_form_flex_input span::after {
   top: 0;
   left: 0;
   z-index: 1;
+  pointer-events: none;
 }
 
 .last_box_form_wrap_file label {
@@ -1562,6 +1664,15 @@ form .last_box_form_flex:nth-child(1) .last_box_form_flex_input span::after {
   align-items: center;
   position: relative;
   z-index: 2;
+  transition: .3s;
+}
+
+.last_box_form_wrap_file label:hover {
+  border: 1px dashed #3757FF;
+}
+
+.last_box_form_wrap_file label:hover span {
+  color: #3757FF;
 }
 
 .last_box_form_wrap_file label span {
@@ -1590,6 +1701,12 @@ form .last_box_form_flex:nth-child(1) .last_box_form_flex_input span::after {
   align-items: center;
   border: none;
   position: relative;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.last_box_form_submit:hover {
+  background: #27292F;
 }
 
 .last_box_form_submit p {
@@ -1610,12 +1727,20 @@ form .last_box_form_flex:nth-child(1) .last_box_form_flex_input span::after {
   position: absolute;
   right: 5px;
   top: 5px;
+  transition: .3s;
+}
+
+.last_box_form_submit:hover b {
+  transform: rotate(-45deg);
 }
 
 .last_box_form_submit b i {
   width: 16px;
   height: 16px;
-  background-image: url(../img/icon/arrow_button_blue2.svg);
+}
+
+.last_box_form_submit:hover b i svg path {
+  stroke: #27292F;
 }
 
 .last_box_form_politico {
@@ -1682,6 +1807,11 @@ footer .container {
   display: block;
   font-size: 16px;
   margin-bottom: 15px;
+  transition: .3s;
+}
+
+.footer_flex_box_item_box a:hover {
+  color: #3757FF;
 }
 
 .footer_flex_box_item_box a:last-child {
@@ -1699,6 +1829,11 @@ footer .container {
   display: block;
   font-size: 16px;
   margin-bottom: 15px;
+  transition: .3s;
+}
+
+.footer_flex_box_wrap a:hover {
+  color: #3757FF;
 }
 
 .footer_flex_last a:nth-child(1) {
@@ -1731,6 +1866,10 @@ footer .container {
   align-items: center;
   background: transparent;
   cursor: pointer;
+  transition: .3s;
+}
+.footer_flex_last button:hover{
+  border: 1px solid #3757FF;
 }
 
 .footer_flex_last button p {
@@ -1738,6 +1877,10 @@ footer .container {
   font-size: 16px;
   font-weight: 500;
   margin-right: 15px;
+  transition: .3s;
+}
+.footer_flex_last button:hover p{
+  color: #3757FF;
 }
 
 .footer_flex_last button p span {
@@ -2728,9 +2871,18 @@ footer .container {
   .rose_flex_right button b i {
     width: 12px;
     height: 12px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rose_flex_right button b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rose_flex_right button b i svg{
+    width: 12px;
+    height: 12px;
   }
 
   .rose_headling span {
@@ -2769,7 +2921,7 @@ footer .container {
   }
 
   .accordion_item_head::before {
-    right: 34px;
+    right: 35px;
     top: 20px;
     font-size: 18px;
   }
@@ -3001,6 +3153,11 @@ footer .container {
     padding: 20px 15px;
   }
 
+  .open .menu_box_elem::after {
+    right: 15px;
+    top: 33px;
+  }
+
 
 }
 
@@ -3141,12 +3298,22 @@ footer .container {
     left: 15px;
     transform: translateX(0%);
   }
+  .tariffs_flex_text_button button b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .tariffs_flex_text_button button b i {
     width: 12px;
     height: 12px;
-    background-size: cover;
-    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tariffs_flex_text_button button b i svg{
+    width: 12px;
+    height: 12px;
   }
 
   .keys_headling a {

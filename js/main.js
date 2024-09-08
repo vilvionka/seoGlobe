@@ -23,7 +23,7 @@
 
 // subscription 
 (() => {
-  let inp = document.querySelectorAll('.last_box_wrap_form_flex_input')
+  let inp = document.querySelectorAll('.last_box_form_flex_input input')
 
   if (inp) {
 
@@ -88,31 +88,5 @@
 
 })();
 
-// copy button call
-(() => {
-  let copyCall = document.querySelector('#copy_call');
 
-  copyCall.addEventListener("click", function () {
-    navigator.clipboard.writeText(document.querySelector("#call_text").innerText).then(function () {
-      copyCall.innerText = 'Скопировано!';
-    }).catch(function (error) {
-      console.error('Error:', error);
-    });
-  });
 
-})();
-
-// copy button email
-
-(() => {
-  let copyEmail = document.querySelector('#copy_email');
-
-  copyEmail.addEventListener("click", function () {
-    navigator.clipboard.writeText(document.querySelector("#email_text").innerText).then(function () {
-      copyEmail.innerText = 'Скопировано!';
-    }).catch(function (error) {
-      console.error('Error:', error);
-    });
-  });
-
-})();
